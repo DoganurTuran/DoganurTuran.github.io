@@ -51,8 +51,282 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
         <p>Download js and css files. Add the downloaded files into the HTML codes.<br></p>
         <img class="img-fluid" src="./2.png" width="400px"><br>
         <p>
-        <p>Şimdiden sizlere söylemek istediğim bir şey var.Kodları kopyala yapıştır yaparak elde etmenize engel olmak için<br>
-        kodların bazı yerlerinde boşluk bırakarak yazdım yazarak öğrenmenize yardımcı olacağını düşünüyorum.</p><br>
+         < !DOCTYPE html>
+    < head>
+    < meta chaarset="utf-8">
+    < tittle> BOOSTRAP GRİD SİSTEMİ< /tittle>
+    < link rel="stylesheet" href="boostrap.min.css">
+    < link rel="stylesheet" href="boostrap.min.js">
+    < link rel="stylesheet" href="boostrap-grid.min.css">
+    < /head>
+< /html>
+          </pre>
+        </code>
+           </div>
+        </b></p>
+    </p>
+    </div>
+    <div class="anlatım">
+        <center><h2>BOOSTRAP NEDİR?</h2></center>
+        <p>Profesyonel bir web sitesi yapmak istiyorsak,sitemizin tüm cihazlara(masaüstü ,dizüstü,tablet,telefon vb.) uyumlu
+        çalışması gerekir.Tüm cihazlara uygun tasarım yapısına <b>responsive design</b>(duyarlı tasarım) denilir.<br>
+        Responsive web tasarımıyaparken ise bize en büyük kolaylığı sağlayan <b>boostrap</b>'dır.
+        Önceleri sadece belirli ölçülerde yapılan web siteleri artık mobil sitelerin önemini sürekli dile getirmetedir.<br>
+        Durum böyle olunca yapılan web sitelerinin tüm ekran boyutlarına uyumlu olması şart haline gelmiştir.<br>
+        </p><br><center>
+        <img class="img-fluid" src="./responsive-design-01-.png" width="400px"></center>
+    </div>
+    <div class="anlatım">
+        <center><h2>RESPONSİVE NEDİR?</h2></center>
+        <p>Responsive ekrana duyarlı demektir. Yani bilgisayarda görünen görünümü elinizde tuttuğunuz telefonun eran boyutuna göre görünümü değiştirir.<br></p>
+        <br><center><img class="img-fluid" src="./makale-icin-responsive-e1567295510234 (1).png" width="400px"></center>  
+    </div>
+    <div class="anlatım">
+        <center><h2>BOOSTRAP'IN 12'LİK GRİD YAPISI</h2></center>
+        <p>Boostrap,web sayfalarını yatay olarak 12 eşit parçaya bölmüş olarak ele alır.Her bir grid <b>8.3%</b>
+        genişlik değerine sahip şekilde hazırlanır.Önyüz geliştiricisi de sadece <b>class</b> tanımlayarak tüm yapıyı hiç
+    olmadığı<br> kadar hızlı ve kolay bir şekilde düzenleyebilir.</p>
+    <center><img class="img-fluid" src="./bootstrap-.png" width="400px"></center>
+    </div>
+    <div class="anlatım">
+        <center><h2>BOOSTRAP GRİD SİSTEMİ</h2></center>
+        <p>Grid yapısı sitenizin iskelet yapısını oluşturmak konusunda size hız katıyor. Ancak en büyük yenilik bu değil. Izgara yapısı sayesinde web sayfanızın responsive (duyarlı) hale bürünmesini sağlayabilirsiniz.<br>
+         Nasıl mı? Acele etmeyin, öncesinde öğrenmemiz gereken birkaç özellik daha var.<br><br>
+         Bootstrap’in grid yapısı her türden taşınabilir cihaza uygun tasarımlar oluşturmanızı sağlıyor. Bunları kendi içinde extra small(xs),small medium(sm), medium(md) ve large(lg) devices olarak sıralıyor.<br>
+         İleride bu özellikleri ayrıntılı şekilde açıklayacağım.<br>En temeliyle başlıyoruz. Arkanıza yaslanın ve rahatlayın.</p>
+      <center><img class="img-fluid" src="./Ekran görüntüsü 2022-04-14 012708.png" width="400px"></center><br>
+    <p>Yukarıdaki col-md-6 tanımlaması, medium (orta) boyutlardaki cihazlarda, ekranın 12’de 6’sını (yarısını) kaplayacak şekilde pozisyon alır. 12 tane grid olduğunu söylemiştik, burada 6 tanesini belirttik.
+    Dolayısıyla bir div’e bu classı verdiğimizde öğe kendiliğinden %50 (6/12 grid) width değerini alacaktır.</p><br>
+    Hemen ek bilgi vereyim size <b>Medium boyutlardaki cihazlar 992 pikselden büyük ekran genişliklerine sahiptir.</b><br>
+    <p>Sizlere bazı kavramlar hakkında kısa bir açıklama yaptıktan sonra özelliklere ve örneklere geçeceğim.</p><br>
+     </div>
+     <div class="anlatım">
+        <center><h2>OFFSET VE PUSH KAVRAMLARI NEDİR?</h2></center>
+        <p>Her iki tanım da ilgili elemanı dış kısmından ittirmenizi sağlar. Margin gibi düşünün. Margin değerini 50 piksel yaptığınız bir resim nasıl 
+        diğer öğelerden 50 piksel uzaklaşıyorsa da offset ve push tanımları da bu işi yapıyor.
+        </p>
+    </div>
+    <div class="anlatım">
+        <center><h2>RESPONSİVE NE DEMEK?</h2></center>
+        <p>Responsive ekrana duyarlı demektir. Yani bilgisayarda görünen görünümü elinizde tuttuğunuz telefonun eran boyutuna göre görünümü değiştirir.<br>
+     <br><center><img class="img-fluid" src="./makale-icin-responsive-e1567295510234 (1).png" width="400px"></center>
+        </p>
+    </div>
+    <div class="anlatım">
+        <center><h2>BOOSTRAP'DA CONTAİNER SINIFI</h2></center>
+        <p>Bootstrap içerisinde içerik kısımlarının bulunduğu ana div yapısını oluşturan bir sınıf oluşturulmuştur.Bu<b>“container”</b>sınıfıdır<br> ve bu sınıf kullanılarak 
+        ana div daha başarılı bir şekilde boyutlandırılır.<br>Container sınıfı 2 çeşittir. 1.si sadece <b>container</b>; sayfanın ortasını alır 1170px genişliğindedir,
+        2.si <b>container -fluid</b> sayfanın tamamını genişlik olarak alır.<br> Grid sistemi classları da bu container classları içerisinde kullanılarak tasarımlar 
+        sorunsuz oluşturulmaktadır.Ekran çözünürlüklerine göre grid sınıflarını ve container<br> boyutlarını gösteren görseli inceleyerek başlayalım.</p>
+       <center><img class="img-fluid" src="./bootstrap_grid.png" width="410px"></center>
+       <p>Yukarıda gösterildiği gibi, responsive bir tasarım yapabilmek için her cihaz ölçüsüne uygun bir kod yazılması gerekmektedir.
+        Bu sayede tüm cihazlarda stabil çalışan bir tasarım elde edebiliriz.<br> Bootstrap içerisinde verilen içerik alanı öncelikle satıra daha sonra da sütunlara ayrılarak gridler oluşturulmaktadır.
+        div tagına row class’ı vererek bir satır açarız ve artık bu satır içerisinde kolonlarımızı oluşturabiliriz.<br><br>
+        Her satır 12 parçaya ayrılmıştır.Burada bize kullanıma sunulmuş olan sınıflar her 1 sutun boyutuyla kullanılabileceği gibi 2,3,4,5…12 li parça şeklinde de kullanılabilir.
+        <br>
+        <b>.container</b> ile responsive olarak yani tarayıcı genişliğine göre .container class' ı sayfamızın alacağı sabit genişliği belirler. Bunu hemen
+        örnek ile pekiştirmenizi istiyorum.</p>
+        Burası HTML kısmıdır.
+        <b>
+            <code>
+                <pre>
+                < !DOCTYPE html>
+                     < div class="container">
+                    < /div>   
+                < /html>
+                </pre>
+            </code>
+        </b>
+        Burası ise CSS kısmıdır.
+        <b>
+            <code>
+                <pre>
+                    .container{
+                        height:100px;
+                        background-color:blue;
+                      }
+                </pre>
+            </code></b>
+            <div id="acıklama">Şimdi bu kodlardan elde ettiğimiz görüntüye bir göz atalım.</div><br>
+            <div id="resimler">
+                <img class="img-fluid" src="resim2.png" width="400px"> Bu görsel tarayıcının boyutu tam ekrandadır.
+            </div><br><br>
+        Burası HTML kısmıdır.
+<b>
+ <code>
+ <pre>
+< !DOCTYPE html>
+< div class="container-fluid">         
+< /div>
+< /html>
+</pre>
+</code>
+</b>
+        Bu kısım ise CSS kısmıdır.
+<b>
+<code>
+<pre>
+.container-fluid{
+    height:100px;
+    background-color:blue;
+}
+</pre>
+</code>
+</b>
+<div id="resimler">
+    <img class="img-fluid" src="resim1.png" width="400px"> Bu görsel ise tarayıcının küçük ekrandaki görünümüdür.Umarım farkı anlamışsınızdır.
+</div><br><br>
+<div id="acıklama">Farkı açıklamak istiyorum ben yinede.Fark şu:Mavi şerit her iki boyutta da gördüğünüz gibi tam ortalanmış ve boyutu orantılı azalıp
+    artıyor.Dİğer sınıf yani <b>.container-fluid</b> ile tarayıcının genişliğini hesaba katmadan tam ekran genişliğinde bir sayfamız olur.İkisinin farkını
+    görmenizi istediğim için ekranda nasıl durduğunu yukarıdaki görsellerde görebilirsiniz.
+    </div><br>
+    </div>
+    <div class="anlatım">
+        <center><h2>BOOSTRAP-4 GRİD SİSTEMİ ÖZELLİKLERİ</h2></center>
+        <p>Grid sistemin en büyük avantajı responsive bir yapıya sahip olmasıdır 
+    yani tarayıcı genişliğine göre her bir kolonu yan yana ya da alt alta alabiliriz.<br>
+   <b>@media query</b>' ler ile tarayıcının o anki genişliğini alabiliyoruz ve aldığımız bu değerlere göre etiketlerini yani bootstrap açısından baktığımızda oluşturduğumuz her kolonu alt alta ya da yan yana alabiliriz.<br>
+    Eğer ki satırda yer varsa yan yana eğer satırda yer kalmadıysa alt satıra alabiliyoruz ki; masaüstü bilgisayarda <br> açılan bir sitenin görünümü yatayda yer kaplarken mobile bir cihazda açılan site tasarımındaki her kolonun 
+    alt alta gelmesi daha bir görünüm sağlayacaktır.</p><br>
+    <p>Boostrap aşağıdaki <b>media query </b>değerlerini kullanmaktadır.</p><br>
+    <p><b>
+        //Küçük Cihazlarda (576px ve yukarısı)<br>
+        @media (min-width: 576px) { ... }<br>
+        <br>
+        //Orta Boy Cihazlarda (tablet, 768px ve yukarısı)<br>
+        @media (min-width: 768px) { ... }<br>
+        <br>
+        //Büyük Cihazlarda (Masaüstü Bilgisayarlar, 992px ve yukarısı)<br>
+        @media (min-width: 992px) { ... }<br>
+        <br>
+        //Ekstra Büyük Cihazlarda (Büyük Masaüstü Bilgisayarlar, 1200px ve yukarısı)<br>
+        @media (min-width: 1200px) { ... }<br>
+        <br>
+    </b>
+    </p>
+    <p><b>
+        Yani tarayıcı genişliği;<br><br>
+        --576px ve aşağısında mı (.xs)<br>
+        <br>
+        --minimum 576px ve 768px aralığında mı (.sm)<br>
+        <br>
+        --minimum 768px ve 992px aralığında mı (md)<br>
+        <br>
+        --minimum 992px ve 1200px aralığında mı (lg)<br>
+        <br>
+        --ya da 1200px ve üstünde mi (xl)<br>
+        <br>
+    </b>
+    </p>
+    <p>Ek bir bilgi vermek istiyorum size <b>.xs sınıfı bootstrap 4 'de kullanılmamaktadır.</b></p>
+    <br>
+    <p>
+    media query kullanarak sayısal değerlerle uğraşmak yerine bootstrap 4 ile belirlenen ve her bir sayısal değere karşılık gelen class isimlerini kullanmak çok daha kolaydır.<br>
+    Bu class isimleri<b> .xs (ekstra small), .sm (small), .md (medium), .lg (large) ve .xl (eksra large)</b> sınıflarıdır.
+    </p>
+    </div>
+    <div class="anlatım">
+        <center><h2>VİSİBLE VE HİDDEN</h2></center>
+        <p>Boostrap kullanırken display tanımları yapmakla da uğraşmıyoruz.Öğelerinizin her türlü tasarımda 
+    görünüklük derecelerini sadece bir class ile yönetebiliyoruz.<br>Aşağıda vereceğim tanımları <b>visible ve hidden</b>olarak
+    ayırdım.Normal haliyle verilmiş bir visible tanımı öğeyi her türden cihazda görünür kılar.
+    Hidden ise onu gizler.<br>Gelin şimdi detaylı şekilde öğrenelim.<br></p><br>
+    <p><b>visible-lg:</b>Sadece large ekran genişliklerinde gözükür.<br>
+    <b>visible-md:</b> Sadece medium ekran genişliklerinde gözükür.<br>
+    <b>visible-sm:</b> Sadece small medium ekran genişliklerinde görünür.<br>
+    <b>visible-xs:</b> Sadece extra small ekran genişliklerinde görünür.<br>
+    <b>hidden-lg:</b> Sadece large ekran genişliklerinde gizlenir.<br>
+    <b>hidden-md:</b> Sadece medium ekran genişliklerinde gizlenir.<br>
+    <b>hidden-sm:</b> Sadece small ekran genişliklerinde gizlenir.<br>
+    <b>hidden-xs:</b> Sadece extra small ekran genişliklerinde gizlennir.<br>
+    <br>
+    <p>Tabi bu yapıları çoklu şekilde kullanabilirsiniz.Örneğin;<br><br>
+     <b>  < div class="visible-lg hidden-md visible-sm hidden-xs">< /div> </b> <br><br>
+    Yukarıda ekran genişliği large ve small medium da gözüksün fakat medium ve extra small da gözükmesin dike
+    belirtmiş olduk.
+
+    </p>
+    </p>
+
+    </div>
+
+    <div class="anlatım">
+        <center><h2>BOOSTRAP-4 GRİD SİSTEMİ ÖRNEKLERİ</h2></center>  
+          <p>Şimdi ilk örneeğimizi sizlere açıklayacağım ve sonrasında da nasıl göründüğüne bakacağız.<br>
+          Yan yana 4 farklı sütun  oluşturacağız.Tarayıcı boyutu en büyükteyken yan yana olacak şekilde görünür.<br>
+          Eğer tarayıcı boyutunu en küçük boyuta aldığımızda ise oluşturduğumuz 4 sütun altalta gelecek şekilde yeni görünüm elde ederiz.<br>
+          Şimdi HTML ve CSS kodlarını size gösterdikten sonra alt kısımda ise nasıl göründüğünü gösteren fotoğrafı yerleştireceğim.<br>
+          </p>
+          Burası HTML kısmıdır.
+      <b>
+      <code>
+      <pre>
+      < div class="container">  
+          < div class="row">
+          < div class="col-sm-3 bg-primary">.col-sm-3< /div>
+          < div class="col-sm-3 bg-danger">.col-sm-3< /div>
+          < div class="col-sm-3 bg-primary">.col-sm-3< /div>
+          < div class="col-sm-3 bg-danger">.col-sm-3< /div>
+          < /div>  
+      < /div>   
+      </pre>
+      </code>
+      </b>
+      Bu kısım ise CSS kısmıdır.
+      <b>
+      <code>
+      <pre>
+          .row{
+              height:50px;
+            }   
+      </pre>
+      </code>
+      </b>
+      <p><img class="img-fluid" src="./Ekran görüntüsü 2022-04-14 005703.png" width="400px"><br>
+      Tarayıcı boyutu tam ekrandayken görünüm böyledir.</p>
+      <p><img class="img-fluid" src="./Ekran görüntüsü 2022-04-14 010010.png" width="400px"><br>
+      Bu görünüm ise tarayıcı boyutu en küçük boyuttayken elde ettiğimiz görüntüdür.Umarım anlatımım öğrenmenize yardımcı oluyordur.<br></p>
+      </div>
+      <div class="anlatım">
+          <p>Yukarıda verdiğim örnekteki 4 sütunun boyutları birbirine eşitti. Şimdi vereceğim örnekte 2 sütun olacak.<br>
+          Fakat ikinci sütunumuz birinci sütunumuzdan büyük olacak.Tarayıcı boyutlarını değiştirdiğimizde nasıl bir görünüm oluşur??<br>
+      Siz düşüne dururken ben alta HTML ve CSS kodlarını yazıp nasıl göründüklerini göstereceğim.Sonrasındabirlikte yorumlayalım.</p>
+      Burası HTML kısmıdır.
+  <b>
+  <code>
+  <pre>
+      < div class="container">  
+      < div class="row">
+      < div class="col-md-3 bg-primary">.col-md-3< /div>
+      < div class="col-md-9 bg-danger">.col-md-3< /div>  
+  < /div>   
+  < /div>
+  </pre>
+  </code>
+  </b>
+    Bu kısım ise CSS kısmıdır.
+    <b>
+  <code>
+  <pre>
+     .container-fluid{
+         height:100px;
+         background-color:blue;
+     }
+  </pre>
+  </code>
+  </b>
+  <p><img class="img-fluid" src="./Ekran görüntüsü 2022-04-14 011149.png" width="400px"><br>
+  Tarayıcı boyutu tam ekrandayken dediğim gibi ikinci sütun birinci sütundan daha büyük.Haydi şimdi tarayıcı boyutunu en küçük boyut<br>
+  yaptığımızda nasıl bir şey ile karşılaşacağız.</p><br>
+  <p><img class="img-fluid" src="./Ekran görüntüsü 2022-04-14 011447.png" width="400px"><br>
+  Evvet umarım tahmin ettiğiniz görüntü bu görüntüdür.Sütun boyutları demek ki tarayıcı boyutunu en küçük yaptığımızda boyutlarını birbirine<br>
+  eşit şekilde alt alta yerleştiriyor.</p>
+      </div>
+      <div class="anlatım">
+          <center><h2>TEŞEKKÜRLER</h2></center>
+          <p>Buraya kadar okuduğunuz için teşekkürler.Umarım anlatımım size yardımcı olmuştur.Elimden geldiğince ayrıntılı anlattım.Soru ve önerileriniz 
+            için aşağıda ki kişisel bilgilerimden ulaşabilirsiniz.<br>
+          </p>
         <b>
         <code>
         <pre>
