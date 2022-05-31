@@ -130,7 +130,7 @@ Grid system classes are also used in these container classes, and designs are cr
                 </pre>
             </code>
         </b>
-        Burası ise CSS kısmıdır.
+        This is the CSS part.
         <b>
             <code>
                 <pre>
@@ -140,11 +140,11 @@ Grid system classes are also used in these container classes, and designs are cr
                       }
                 </pre>
             </code></b>
-            <div id="acıklama">Şimdi bu kodlardan elde ettiğimiz görüntüye bir göz atalım.</div><br>
+            <div id="acıklama">Now let's take a look at the image we get from these codes.</div><br>
             <div id="resimler">
-                <img class="img-fluid" src="resim2.png" width="400px"> Bu görsel tarayıcının boyutu tam ekrandadır.
+                <img class="img-fluid" src="7.png" width="400px">
             </div><br><br>
-        Burası HTML kısmıdır.
+        This is the HTML part.
 <b>
  <code>
  <pre>
@@ -155,7 +155,7 @@ Grid system classes are also used in these container classes, and designs are cr
 </pre>
 </code>
 </b>
-        Bu kısım ise CSS kısmıdır.
+        This is the CSS part.
 <b>
 <code>
 <pre>
@@ -167,76 +167,78 @@ Grid system classes are also used in these container classes, and designs are cr
 </code>
 </b>
 <div id="resimler">
-    <img class="img-fluid" src="resim1.png" width="400px"> Bu görsel ise tarayıcının küçük ekrandaki görünümüdür.Umarım farkı anlamışsınızdır.
+    <img class="img-fluid" src="8.png" width="400px"> This image is the view of the browser on the small screen.
 </div><br><br>
-<div id="acıklama">Farkı açıklamak istiyorum ben yinede.Fark şu:Mavi şerit her iki boyutta da gördüğünüz gibi tam ortalanmış ve boyutu orantılı azalıp
-    artıyor.Dİğer sınıf yani <b>.container-fluid</b> ile tarayıcının genişliğini hesaba katmadan tam ekran genişliğinde bir sayfamız olur.İkisinin farkını
-    görmenizi istediğim için ekranda nasıl durduğunu yukarıdaki görsellerde görebilirsiniz.
+<div id="acıklama">I want to explain the difference. As you can see in both dimensions,
+the blue stripe is exactly centered and its size decreases and increases proportionally. 
+With the other class, container-fluid, we have a page with full screen width, without taking into account the width of the browser. 
+Since I want you to see the difference between the two, you can see how they look on the screen in the images above.
     </div><br>
     </div>
     <div class="lecture">
-        <center><h2>BOOTSTRAP-4 GRİD SİSTEMİ ÖZELLİKLERİ</h2></center>
-        <p>Grid sistemin en büyük avantajı responsive bir yapıya sahip olmasıdır 
-    yani tarayıcı genişliğine göre her bir kolonu yan yana ya da alt alta alabiliriz.<br>
-   <b>@media query</b>' ler ile tarayıcının o anki genişliğini alabiliyoruz ve aldığımız bu değerlere göre etiketlerini yani bootstrap açısından baktığımızda oluşturduğumuz her kolonu alt alta ya da yan yana alabiliriz.<br>
-    Eğer ki satırda yer varsa yan yana eğer satırda yer kalmadıysa alt satıra alabiliyoruz ki; masaüstü bilgisayarda <br> açılan bir sitenin görünümü yatayda yer kaplarken mobile bir cihazda açılan site tasarımındaki her kolonun 
-    alt alta gelmesi daha bir görünüm sağlayacaktır.</p><br>
-    <p>Bootstrap aşağıdaki <b>media query </b>değerlerini kullanmaktadır.</p><br>
+        <center><h2>BOOTSTRAP-4 GRID SYSTEM FEATURES</h2></center>
+        <pThe biggest advantage of the Grid system is that it has a responsive structure. 
+        With @media queries, we can get the current width of the browser, and according to these values,
+        when we look at the labels, in terms of bootstrap, we can get each column we create one after the other or side by side.
+     If there is room on the line, we can take it side by side, if there is no space on the line, we can put it on the bottom line; 
+     While the view of a site opened on a desktop computer takes up horizontal space, each column in the site design opened on 
+     a mobile device will provide a more visible view.</p><br>
+    <p>Bootstrap uses the following media query values.</p><br>
     <p><b>
-        //Küçük Cihazlarda (576px ve yukarısı)<br>
+        //On Small Devices (576px and above)<br>
         @media (min-width: 576px) { ... }<br>
         <br>
-        //Orta Boy Cihazlarda (tablet, 768px ve yukarısı)<br>
+        //For Medium Devices (tablet, 768px and above)<br>
         @media (min-width: 768px) { ... }<br>
         <br>
-        //Büyük Cihazlarda (Masaüstü Bilgisayarlar, 992px ve yukarısı)<br>
+        //On Large Devices (Desktops, 992px and above)<br>
         @media (min-width: 992px) { ... }<br>
         <br>
-        //Ekstra Büyük Cihazlarda (Büyük Masaüstü Bilgisayarlar, 1200px ve yukarısı)<br>
+        //On Extra Large Devices (Large Desktops, 1200px and above)<br>
         @media (min-width: 1200px) { ... }<br>
         <br>
     </b>
     </p>
     <p><b>
-        Yani tarayıcı genişliği;<br><br>
-        --576px ve aşağısında mı (.xs)<br>
+        So browser width;<br><br>
+        --Is it -576px and below (.xs) <br>
         <br>
-        --minimum 576px ve 768px aralığında mı (.sm)<br>
+        -- is in the minimum range of 576px and 768px (.sm)<br>
         <br>
-        --minimum 768px ve 992px aralığında mı (md)<br>
+        --is in the minimum range of 768px and 992px (md)<br>
         <br>
-        --minimum 992px ve 1200px aralığında mı (lg)<br>
+        --minimum is in the range of 992px and 1200px (lg)<br>
         <br>
-        --ya da 1200px ve üstünde mi (xl)<br>
+        --or 1200px and above (xl)<br>
         <br>
     </b>
     </p>
-    <p>Ek bir bilgi vermek istiyorum size <b>.xs sınıfı bootstrap 4 'de kullanılmamaktadır.</b></p>
+    <p>The xs class is obsolete in bootstrap 4.</b></p>
     <br>
     <p>
-    media query kullanarak sayısal değerlerle uğraşmak yerine bootstrap 4 ile belirlenen ve her bir sayısal değere karşılık gelen class isimlerini kullanmak çok daha kolaydır.<br>
-    Bu class isimleri<b> .xs (ekstra small), .sm (small), .md (medium), .lg (large) ve .xl (eksra large)</b> sınıflarıdır.
+    Instead of dealing with numeric values using a media query, it is much easier to use the class names determined by bootstrap 4 and corresponding to each numeric value.
+These class names are .xs (extra small), .sm (small), .md (medium), .lg (large), and .xl (extra large).
     </p>
     </div>
     <div class="lecture">
-        <center><h2>VİSİBLE VE HİDDEN</h2></center>
-        <p>Bootstrap kullanırken display tanımları yapmakla da uğraşmıyoruz.Öğelerinizin her türlü tasarımda 
-    görünüklük derecelerini sadece bir class ile yönetebiliyoruz.<br>Aşağıda vereceğim tanımları <b>visible ve hidden</b>olarak
-    ayırdım.Normal haliyle verilmiş bir visible tanımı öğeyi her türden cihazda görünür kılar.
-    Hidden ise onu gizler.<br>Gelin şimdi detaylı şekilde öğrenelim.<br></p><br>
-    <p><b>visible-lg:</b>Sadece large ekran genişliklerinde gözükür.<br>
-    <b>visible-md:</b> Sadece medium ekran genişliklerinde gözükür.<br>
-    <b>visible-sm:</b> Sadece small medium ekran genişliklerinde görünür.<br>
-    <b>visible-xs:</b> Sadece extra small ekran genişliklerinde görünür.<br>
-    <b>hidden-lg:</b> Sadece large ekran genişliklerinde gizlenir.<br>
-    <b>hidden-md:</b> Sadece medium ekran genişliklerinde gizlenir.<br>
-    <b>hidden-sm:</b> Sadece small ekran genişliklerinde gizlenir.<br>
-    <b>hidden-xs:</b> Sadece extra small ekran genişliklerinde gizlennir.<br>
+        <center><h2>VİSİBLE AND HİDDEN</h2></center>
+        <p>While using Bootstrap, we do not deal with display definitions.
+        We can manage the visibility of your elements in all kinds of designs with only one class.
+I have divided the definitions I will give below as visible and hidden. 
+A visible definition given in its normal state makes the item visible on all kinds of devices. Hidden hides it.
+Let's learn in detail now.<br></p><br>
+    <p><b>visible-lg:</b>Only visible on large screen widths.<br>
+    <b>visible-md:</b> Only visible on medium screen widths.<br>
+    <b>visible-sm:</b> Only visible on small medium screen widths.<br>
+    <b>visible-xs:</b> Only visible on extra small screen widths.<br>
+    <b>hidden-lg:</b> It is hidden only on large screen widths.<br>
+    <b>hidden-md:</b> It is hidden only on medium screen widths.<br>
+    <b>hidden-sm:</b> It is hidden only on small screen widths.<br>
+    <b>hidden-xs:</b> It is hidden only on extra small screen widths.<br>
     <br>
-    <p>Tabi bu yapıları çoklu şekilde kullanabilirsiniz.Örneğin;<br><br>
+    <p>Of course, you can use these structures in multiple ways. For example;<br><br>
      <b>  < div class="visible-lg hidden-md visible-sm hidden-xs">< /div> </b> <br><br>
-    Yukarıda ekran genişliği large ve small medium da gözüksün fakat medium ve extra small da gözükmesin dike
-    belirtmiş olduk.
+    We have stated above so that the screen width will appear in large and small medium, but not in medium and extra small.
 
     </p>
     </p>
@@ -244,13 +246,13 @@ Grid system classes are also used in these container classes, and designs are cr
     </div>
 
     <div class="lecture">
-        <center><h2>BOOTSTRAP-4 GRİD SİSTEMİ ÖRNEKLERİ</h2></center>  
-          <p>Şimdi ilk örneeğimizi sizlere açıklayacağım ve sonrasında da nasıl göründüğüne bakacağız.<br>
-          Yan yana 4 farklı sütun  oluşturacağız.Tarayıcı boyutu en büyükteyken yan yana olacak şekilde görünür.<br>
-          Eğer tarayıcı boyutunu en küçük boyuta aldığımızda ise oluşturduğumuz 4 sütun altalta gelecek şekilde yeni görünüm elde ederiz.<br>
-          Şimdi HTML ve CSS kodlarını size gösterdikten sonra alt kısımda ise nasıl göründüğünü gösteren fotoğrafı yerleştireceğim.<br>
+        <center><h2>BOOTSTRAP-4 GRID SYSTEM EXAMPLES</h2></center>  
+          <p>Now I'm going to explain our first example to you, and then we'll see how it looks.
+We will create 4 different columns side by side. They appear side by side when the browser size is at its largest.
+If we reduce the browser size to the smallest size, we get a new view with the 4 columns that we created.
+Now, after I show you the HTML and CSS codes, I will place the photo at the bottom showing how it looks.<br>
           </p>
-          Burası HTML kısmıdır.
+          This is the HTML part.
       <b>
       <code>
       <pre>
@@ -265,7 +267,7 @@ Grid system classes are also used in these container classes, and designs are cr
       </pre>
       </code>
       </b>
-      Bu kısım ise CSS kısmıdır.
+      This is the CSS part.
       <b>
       <code>
       <pre>
@@ -275,19 +277,19 @@ Grid system classes are also used in these container classes, and designs are cr
       </pre>
       </code>
       </b>
-      <p><img class="img-fluid" src="./Ekran görüntüsü 2022-04-14 005703.png" width="400px"><br>
-      Tarayıcı boyutu tam ekrandayken görünüm böyledir.</p>
-      <p><img class="img-fluid" src="./Ekran görüntüsü 2022-04-14 010010.png" width="400px"><br>
-      Bu görünüm ise tarayıcı boyutu en küçük boyuttayken elde ettiğimiz görüntüdür.Umarım anlatımım öğrenmenize yardımcı oluyordur.<br></p>
+      <p><img class="img-fluid" src="./9.png" width="400px"><br>
+      This is how it looks when the browser size is full screen.</p>
+      <p><img class="img-fluid" src="./10.png" width="400px"><br>
+     This view is the image we get when the browser size is the smallest.<br></p>
       </div>
       <div class="lecture">
-          <p>Yukarıda verdiğim örnekteki 4 sütunun boyutları birbirine eşitti. Şimdi vereceğim örnekte 2 sütun olacak.<br>
-          Fakat ikinci sütunumuz birinci sütunumuzdan büyük olacak.Tarayıcı boyutlarını değiştirdiğimizde nasıl bir görünüm oluşur??<br>
-      Siz düşüne dururken ben alta HTML ve CSS kodlarını yazıp nasıl göründüklerini göstereceğim.Sonrasındabirlikte yorumlayalım.</p>
-      Burası HTML kısmıdır.
+          <p>In the example I gave above, the dimensions of the 4 columns were equal to each other. 
+          In the example I will give now, there will be 2 columns.
+But our second column will be bigger than our first column.
   <b>
   <code>
   <pre>
+      This is the HTML part.
       < div class="container">  
       < div class="row">
       < div class="col-md-3 bg-primary">.col-md-3< /div>
@@ -297,7 +299,7 @@ Grid system classes are also used in these container classes, and designs are cr
   </pre>
   </code>
   </b>
-    Bu kısım ise CSS kısmıdır.
+    This part is the CSS part.
     <b>
   <code>
   <pre>
@@ -308,21 +310,12 @@ Grid system classes are also used in these container classes, and designs are cr
   </pre>
   </code>
   </b>
-  <p><img class="img-fluid" src="./Ekran görüntüsü 2022-04-14 011149.png" width="400px"><br>
-  Tarayıcı boyutu tam ekrandayken dediğim gibi ikinci sütun birinci sütundan daha büyük.Haydi şimdi tarayıcı boyutunu en küçük boyut<br>
-  yaptığımızda nasıl bir şey ile karşılaşacağız.</p><br>
-  <p><img class="img-fluid" src="./Ekran görüntüsü 2022-04-14 011447.png" width="400px"><br>
-  Evvet umarım tahmin ettiğiniz görüntü bu görüntüdür.Sütun boyutları demek ki tarayıcı boyutunu en küçük yaptığımızda boyutlarını birbirine<br>
-  eşit şekilde alt alta yerleştiriyor.</p>
+  <p><img class="img-fluid" src="./11.png" width="400px"><br>
+  As I said when the browser size is in full screen, the second column is larger than the first column. 
+  Let's see what happens when we make the browser size the smallest size.</p><br>
+  <p><img class="img-fluid" src="./12.png" width="400px"><br>
+ Column sizes place their sizes equally under each other when we make the browser size the smallest.</p>
       </div>
-      <div class="lecture">
-          <center><h2>TEŞEKKÜRLER</h2></center>
-          <p>Buraya kadar okuduğunuz için teşekkürler.Umarım anlatımım size yardımcı olmuştur.Elimden geldiğince ayrıntılı anlattım.Soru ve önerileriniz 
-            için aşağıda ki kişisel bilgilerimden ulaşabilirsiniz.<br>
-          </p>
-        <b>
-        <code>
-        <pre>
       </h5>
 
  
